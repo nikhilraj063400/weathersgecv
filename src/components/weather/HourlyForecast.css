@@ -1,0 +1,144 @@
+/* Hourly Forecast Strip Styles */
+
+.hourly-card {
+  padding: 22px 24px;
+  background: rgba(10, 31, 77, 0.45);
+  border: 1px solid rgba(79, 216, 255, 0.25);
+}
+
+.hourly-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.hourly-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hourly-header-icon {
+  color: var(--accent-cyan);
+}
+
+.hourly-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.hourly-hint-pill {
+  font-size: 0.72rem;
+  padding: 2px 8px;
+  color: var(--blue-300);
+}
+
+.hourly-scroll-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.scroll-arrow-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+  transition: all var(--transition-fast);
+}
+
+.scroll-arrow-btn:hover {
+  color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+  background: rgba(79, 216, 255, 0.15);
+}
+
+.hourly-strip-container {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 6px 2px 14px;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  user-select: none;
+}
+
+.hourly-strip-container.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.hourly-item {
+  flex: 0 0 88px;
+  min-width: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 12px;
+  border-radius: var(--radius-md);
+  background: rgba(10, 31, 77, 0.38);
+  border: 1px solid var(--glass-border-subtle);
+  transition: all var(--transition-fast);
+}
+
+.hourly-item:hover {
+  background: rgba(18, 70, 179, 0.35);
+  border-color: rgba(79, 216, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+.hourly-item-active {
+  background: linear-gradient(180deg, rgba(79, 216, 255, 0.25), rgba(26, 95, 224, 0.3));
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 20px var(--accent-cyan-glow);
+}
+
+.hour-time {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.hourly-item-active .hour-time {
+  color: var(--accent-cyan);
+  font-weight: 700;
+}
+
+.hour-icon {
+  color: var(--blue-200);
+}
+
+.hourly-item-active .hour-icon {
+  color: #ffffff;
+}
+
+.hour-temp {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hour-pop-badge {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.hour-pop-badge.has-pop {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.hour-wind {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}

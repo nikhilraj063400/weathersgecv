@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+  <defs>
+    <linearGradient id="duskSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060e24"/>
+      <stop offset="30%" stop-color="#0c1b40"/>
+      <stop offset="60%" stop-color="#192857"/>
+      <stop offset="82%" stop-color="#34285c"/>
+      <stop offset="92%" stop-color="#5a3d70"/>
+      <stop offset="97%" stop-color="#734774"/>
+      <stop offset="100%" stop-color="#080e1c"/>
+    </linearGradient>
+    <radialGradient id="twilightGlow" cx="40%" cy="92%" r="50%">
+      <stop offset="0%" stop-color="#c4789b" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#4e336e" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0c1b40" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#b4d5fe" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#duskSky)"/>
+  <rect width="1920" height="1080" fill="url(#twilightGlow)"/>
+  <!-- Twinkling stars in upper sky -->
+  <g fill="#ffffff" opacity="0.75">
+    <circle cx="280" cy="140" r="1.5"/>
+    <circle cx="540" cy="90" r="2"/>
+    <circle cx="780" cy="180" r="1.2"/>
+    <circle cx="1120" cy="110" r="1.8"/>
+    <circle cx="1400" cy="160" r="1.4"/>
+    <circle cx="1650" cy="80" r="2.2"/>
+    <circle cx="1780" cy="220" r="1.3"/>
+    <circle cx="390" cy="280" r="1.4"/>
+    <circle cx="920" cy="240" r="1.5"/>
+    <circle cx="1300" cy="300" r="1.2"/>
+  </g>
+  <!-- Distant dark hills -->
+  <path d="M0 880 Q 400 850 900 870 T 1920 860 L 1920 1080 L 0 1080 Z" fill="#0c1729" opacity="0.8"/>
+  <path d="M0 920 Q 550 890 1100 910 T 1920 900 L 1920 1080 L 0 1080 Z" fill="#060c17"/>
+  <!-- Distant city lights on horizon -->
+  <g fill="#ffd599" opacity="0.65">
+    <circle cx="580" cy="905" r="1"/>
+    <circle cx="600" cy="903" r="1.5"/>
+    <circle cx="615" cy="906" r="1"/>
+    <circle cx="640" cy="904" r="1.2"/>
+    <circle cx="1080" cy="895" r="1.3"/>
+    <circle cx="1110" cy="897" r="1"/>
+    <circle cx="1140" cy="894" r="1.6"/>
+  </g>
+  <rect x="0" y="940" width="1920" height="140" fill="#040810" opacity="0.95"/>
+</svg>

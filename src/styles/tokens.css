@@ -1,0 +1,65 @@
+/* Blue Theme & Design System Tokens */
+:root {
+  /* Blue Spectrum */
+  --blue-950: #06122b;
+  --blue-900: #0a1f4d;
+  --blue-800: #0d2f7a;
+  --blue-700: #1246b3;
+  --blue-600: #1a5fe0;
+  --blue-500: #2f7bff; /* Primary Brand */
+  --blue-400: #5b9bff;
+  --blue-300: #8dbbff;
+  --blue-200: #bcd8ff;
+  --blue-100: #e3efff;
+
+  /* Accent & Status Colors */
+  --accent-cyan: #4fd8ff;
+  --accent-cyan-glow: rgba(79, 216, 255, 0.35);
+  --accent-amber: #ffb86c;
+  --accent-rose: #ff7675;
+  --accent-emerald: #55efc4;
+
+  /* Typography */
+  --text: #f4f8ff;
+  --text-dim: rgba(244, 248, 255, 0.74);
+  --text-muted: rgba(244, 248, 255, 0.50);
+  --text-subtle: rgba(244, 248, 255, 0.35);
+
+  /* Glassmorphism System */
+  --glass-bg-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.04) 100%);
+  --glass-tint: rgba(47, 123, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.28);
+  --glass-border-subtle: rgba(255, 255, 255, 0.14);
+  --glass-blur: blur(20px) saturate(160%);
+  --glass-blur-mobile: blur(14px) saturate(140%);
+  --glass-shadow: 0 20px 60px rgba(6, 18, 43, 0.35);
+  --glass-shadow-hover: 0 24px 70px rgba(6, 18, 43, 0.5), 0 0 35px rgba(79, 216, 255, 0.2);
+  --glass-inner-highlight: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+
+  /* Fallback for browsers without backdrop-filter */
+  --glass-fallback-bg: rgba(10, 31, 77, 0.88);
+
+  /* Radii */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Responsive Width Constraints */
+  --max-content-width: 1240px;
+}

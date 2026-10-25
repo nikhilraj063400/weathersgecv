@@ -1,0 +1,293 @@
+/* Current Weather Hero Card Styles */
+
+.current-weather-hero {
+  padding: 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  position: relative;
+  background: rgba(10, 31, 77, 0.48);
+  border: 1px solid rgba(79, 216, 255, 0.28);
+}
+
+.hero-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.hero-top-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-greeting-pill {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--blue-200);
+  background: rgba(18, 70, 179, 0.32);
+  border-color: rgba(79, 216, 255, 0.3);
+}
+
+.hero-time-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.hero-clock-icon {
+  color: var(--accent-cyan);
+}
+
+.hero-fav-btn {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+}
+
+.hero-fav-btn:hover {
+  color: var(--accent-rose);
+  border-color: var(--accent-rose);
+}
+
+.hero-fav-btn.fav-active {
+  color: var(--accent-rose);
+  border-color: var(--accent-rose);
+  background: rgba(255, 118, 117, 0.2);
+}
+
+/* 3-Column Layout */
+.hero-content-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .hero-content-columns {
+    grid-template-columns: 1.1fr 1fr 1.15fr;
+  }
+}
+
+/* Left Column */
+.hero-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-location-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-city-name {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.hero-city-meta {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+.hero-temp-wrapper {
+  display: flex;
+  align-items: flex-start;
+  line-height: 0.88;
+  margin: 6px 0;
+}
+
+.hero-temp-value {
+  font-size: clamp(4.5rem, 10vw, 7rem);
+  font-weight: 200;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  text-shadow: 0 4px 30px rgba(6, 18, 43, 0.5);
+}
+
+.hero-temp-unit {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 300;
+  color: var(--accent-cyan);
+  margin-top: 4px;
+}
+
+.hero-temp-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.84rem;
+}
+
+.stat-label {
+  color: var(--text-dim);
+}
+
+.stat-value {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.high-low-stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.high-low-divider {
+  color: var(--text-muted);
+}
+
+.arrow-high {
+  color: #ff9f43;
+}
+
+.arrow-low {
+  color: var(--accent-cyan);
+}
+
+/* Center Column: Condition Art */
+.hero-center-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.condition-art-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border-subtle);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 260px;
+}
+
+.condition-icon-halo {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--radius-full);
+  background: radial-gradient(circle, rgba(79, 216, 255, 0.25) 0%, rgba(26, 95, 224, 0.1) 70%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px var(--accent-cyan-glow);
+}
+
+.hero-weather-icon-large {
+  color: var(--accent-cyan);
+}
+
+.condition-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-condition-desc-large {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.condition-subphrase {
+  font-size: 0.8rem;
+  color: var(--blue-200);
+}
+
+/* Right Column: Telemetry Matrix */
+.hero-right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.telemetry-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 14px;
+  background: rgba(10, 31, 77, 0.45);
+  border-radius: var(--radius-md);
+}
+
+.chip-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.chip-label {
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.chip-icon {
+  color: var(--accent-cyan);
+}
+
+.chip-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: var(--radius-full);
+  border: 1px solid;
+}
+
+.chip-val-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.chip-val {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.chip-subval {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-weight: 400;
+}

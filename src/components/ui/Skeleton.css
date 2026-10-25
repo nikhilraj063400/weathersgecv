@@ -1,0 +1,51 @@
+/* Shimmer Skeleton Styles */
+
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  width: 100%;
+}
+
+.skeleton-hero-card,
+.skeleton-strip-card,
+.skeleton-card {
+  padding: 24px;
+}
+
+.skeleton-row-spaced {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skeleton-hourly-row {
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.skeleton-hourly-item {
+  min-width: 80px;
+  height: 120px;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .skeleton-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skeleton-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}

@@ -1,0 +1,60 @@
+/* Quick Cities Bar Styles */
+
+.quick-cities-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 2px 0 6px;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.quick-cities-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--blue-300);
+  flex-shrink: 0;
+}
+
+.quick-sparkle-icon {
+  color: var(--accent-cyan);
+}
+
+.quick-cities-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.quick-city-pill {
+  padding: 5px 14px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.quick-city-pill:hover {
+  color: #ffffff;
+  border-color: var(--accent-cyan);
+  background: rgba(79, 216, 255, 0.15);
+}
+
+.quick-city-active {
+  color: #ffffff;
+  font-weight: 600;
+  border-color: var(--accent-cyan);
+  background: linear-gradient(135deg, rgba(79, 216, 255, 0.28), rgba(26, 95, 224, 0.35));
+  box-shadow: 0 0 14px var(--accent-cyan-glow);
+}

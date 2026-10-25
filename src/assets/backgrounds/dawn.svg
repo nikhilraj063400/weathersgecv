@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dawnSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e2348"/>
+      <stop offset="45%" stop-color="#214b7e"/>
+      <stop offset="70%" stop-color="#4a7eb8"/>
+      <stop offset="82%" stop-color="#a4bde0"/>
+      <stop offset="88%" stop-color="#e8bfa2"/>
+      <stop offset="93%" stop-color="#ffb88c"/>
+      <stop offset="100%" stop-color="#142b47"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="85%" r="60%">
+      <stop offset="0%" stop-color="#ffd5b8" stop-opacity="0.6"/>
+      <stop offset="35%" stop-color="#f59e6c" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#4a7eb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mistGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dce9f8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c6dbf4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#94b8e3" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="horizonRidge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16304f"/>
+      <stop offset="100%" stop-color="#081524"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#dawnSky)"/>
+  <rect width="1920" height="1080" fill="url(#sunGlow)"/>
+  <!-- Distant mountain ridges in dawn silhouette -->
+  <path d="M0 860 Q 320 810 680 840 T 1320 830 T 1920 850 L 1920 1080 L 0 1080 Z" fill="#1d3d63" opacity="0.6"/>
+  <rect x="0" y="800" width="1920" height="90" fill="url(#mistGrad)"/>
+  <path d="M0 900 Q 420 870 950 890 T 1600 880 T 1920 910 L 1920 1080 L 0 1080 Z" fill="url(#horizonRidge)" opacity="0.9"/>
+  <!-- Calming reflective water expanse -->
+  <rect x="0" y="940" width="1920" height="140" fill="#08182b" opacity="0.95"/>
+  <ellipse cx="960" cy="950" rx="400" ry="12" fill="#ffd5b8" opacity="0.2"/>
+</svg>

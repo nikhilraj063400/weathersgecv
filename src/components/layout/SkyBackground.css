@@ -1,0 +1,111 @@
+/* Sky Background & Atmospheric Effects */
+
+.sky-background-root {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 0;
+  overflow: hidden;
+  background-color: var(--blue-950);
+}
+
+.sky-image-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  transition: background-image 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s ease-out;
+  transform: scale(1.02);
+}
+
+/* Atmospheric contrast overlay to guarantee WCAG AA readability on any sky */
+.sky-contrast-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(6, 18, 43, 0.40) 0%,
+    rgba(10, 31, 77, 0.25) 45%,
+    rgba(6, 18, 43, 0.65) 100%
+  );
+  pointer-events: none;
+}
+
+/* Fog Effect: soft atmospheric blur */
+.effect-fog .sky-image-layer {
+  filter: blur(8px);
+}
+
+/* Snow Effect: frosted ice borders */
+.effect-snow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  box-shadow: inset 0 0 60px rgba(220, 240, 255, 0.55), inset 0 0 15px #ffffff;
+}
+
+/* Thunderstorm Lightning Flash */
+.sky-lightning-flash {
+  position: absolute;
+  inset: 0;
+  background: rgba(230, 245, 255, 0.85);
+  pointer-events: none;
+  z-index: 3;
+  animation: lightningFlash 8s infinite;
+}
+
+/* Rain Condensation Droplets sliding down glass */
+.rain-glass-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.rain-droplet {
+  position: absolute;
+  top: -30px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(180, 220, 255, 0.75) 75%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 4px rgba(79, 216, 255, 0.5);
+  animation: rainTrickle linear infinite;
+}
+
+/* Phase specifics adjustments */
+.phase-night .sky-contrast-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(4, 10, 26, 0.5) 0%,
+    rgba(7, 19, 51, 0.3) 50%,
+    rgba(4, 9, 23, 0.7) 100%
+  );
+}
+
+.phase-dawn .sky-contrast-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(6, 18, 43, 0.35) 0%,
+    rgba(14, 35, 72, 0.2) 60%,
+    rgba(6, 18, 43, 0.55) 100%
+  );
+}
+
+.phase-golden .sky-contrast-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(6, 18, 43, 0.35) 0%,
+    rgba(18, 47, 99, 0.2) 65%,
+    rgba(6, 18, 43, 0.6) 100%
+  );
+}

@@ -1,0 +1,41 @@
+/* Weather Tips Banner Styles */
+
+.weather-tips-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: rgba(10, 31, 77, 0.45);
+  border: 1px solid rgba(79, 216, 255, 0.25);
+}
+
+.tip-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(79, 216, 255, 0.2);
+}
+
+.tip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tip-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.tip-message {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.35;
+}

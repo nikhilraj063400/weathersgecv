@@ -1,0 +1,91 @@
+/* Sun Arc Visualizer Styles */
+
+.sun-arc-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.sun-arc-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sun-arc-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.daylight-pill {
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  color: var(--accent-cyan);
+}
+
+.sun-arc-svg-wrap {
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.sun-arc-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.sun-orb-halo {
+  filter: drop-shadow(0 0 8px rgba(255, 184, 108, 0.9));
+  transition: cx 0.5s ease-out, cy 0.5s ease-out;
+}
+
+.sun-orb-core {
+  transition: cx 0.5s ease-out, cy 0.5s ease-out;
+}
+
+.sun-times-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.sun-time-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-sunset {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.sunrise-icon {
+  color: var(--accent-amber);
+}
+
+.sunset-icon {
+  color: var(--accent-rose);
+}
+
+.time-text-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-name {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.time-val {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+}
